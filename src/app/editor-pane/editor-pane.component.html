@@ -1,1 +1,4 @@
-<textarea id="editor" [(ngModel)]="markdown"></textarea>
+<div id="top">
+    <textarea id="editor" [(ngModel)]="markdown"></textarea>
+</div>
+<app-preview-pane [markdown]="markdown"></app-preview-pane>

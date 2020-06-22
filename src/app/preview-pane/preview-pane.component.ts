@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import * as marked from 'marked'
 
 @Component({
   selector: 'app-preview-pane',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PreviewPaneComponent implements OnInit {
 
+  @Input() markdown: string;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  transformMarkdown() {
+    marked.setOptions({
+      breaks: true
+    });
+    return marked(this.markdown)
   }
 
 }
