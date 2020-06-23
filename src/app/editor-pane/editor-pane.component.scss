@@ -2,15 +2,43 @@ textarea {
     background-color: rgb(30,30,30);
     color: greenyellow;
     font-size: 14px;
-    width: 100%;
+    width: calc(100% - 10px);
     height: 50vh;
     resize: none;
     border: none;
-    border-radius: 0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
     outline: 0;
-    font-family: 'Consolas', 'Courier New', monospace
+    font-family: 'Consolas', 'Courier New', monospace;
+    margin: 0px 5px 5px 5px;
+    overflow-y: hidden;
 }
 
-#top {
-    background-color: rgb(30,30,30);
+#terminal-title-bar {
+    color: white;
+    background-color: rgb(236,236,236);
+    margin: 5px 5px 0 5px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+span {
+    padding: 5px;
+    color: rgb(30,30,30)
+}
+
+i {
+    margin-right: 5px;
+}
+
+.clo {
+    color: rgb(238, 107, 96);
+}
+
+.min {
+    color: rgb(246, 190, 80);
+}
+
+.max {
+    color: rgb(95, 198, 86);
 }

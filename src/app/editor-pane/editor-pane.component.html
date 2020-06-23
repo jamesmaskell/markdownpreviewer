@@ -1,4 +1,10 @@
 <div id="top">
+    <div id="terminal-title-bar">
+        <span>
+            <i id="close" class="clo fa fa-circle"></i><i class="fa fa-circle min"></i><i class="fa fa-circle max"></i>
+            <span>Terminal</span>
+        </span>
+    </div>
     <textarea id="editor" [(ngModel)]="markdown"></textarea>
 </div>
 <app-preview-pane [markdown]="markdown"></app-preview-pane>
