@@ -7,24 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditorPaneComponent implements OnInit {
 
-  markdown: string = "# Welcome\r\n\r\n" 
-                   + "## To\r\n\r\n"
-                   + "**This text will be bold**\r\n\r\n"
-                   + "[Link](http://www.reddit.com)\r\n\r\n"
-                   + "- Item 1\r\n\r\n"
-                   + "![GitHub Logo](/images/logo.png)\r\n\r\n"
-                   + "> We're living the future so\r\n\r\n"
-                   + "    element here instead.\r\n\r\n"
-                   + "```if (isAwesome){return true}```"
+  markdown: string = "![Picture of terminal](https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Gnome-utilities-terminal.svg/48px-Gnome-utilities-terminal.svg.png)\r\n\r\n"
+                   + "## Welcome to\r\n\r\n" 
+                   + "# Retro-ish markdown terminal\r\n\r\n"
+                   + "> Any fool can write code that a computer can understand....\r\n\r\n"
+                   + "**Read more about ```GitHub``` Markdown [here](https://guides.github.com/features/mastering-markdown/)**\r\n\r\n"               
+                   + "### More information\r\n"
+                   + "- [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)\r\n"
+                   + "- [Basic writing and formatting syntax](https://help.github.com/en/articles/basic-writing-and-formatting-syntax)\r\n"
+                   + "- [Working with advanced formatting](https://help.github.com/en/articles/working-with-advanced-formatting)\r\n\r\n"
+                   + "```javascript\r\n"
+                   + "let awesome = true\r\n"
+                   + "if(retroIshMarkdownTerminal === awesome){\r\n"
+                   + "    return \":+1\"\r\n"
+                   + "}\r\n"
+                   + "```"
                    
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  onClick(): void {
-    console.log(this.markdown);
-  }
-
 }
